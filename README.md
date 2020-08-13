@@ -1,6 +1,6 @@
 # eslint-config-vscode-ext
 
-This module is an ESLint [shareable config](https://eslint.org/docs/developer-guide/shareable-configs.html) for TypeScript to be used in VS Code extensions.
+This module is an ESLint [shareable config](https://eslint.org/docs/developer-guide/shareable-configs.html) for TypeScript, to be used with VS Code extensions.
 
 ## Installation
 
