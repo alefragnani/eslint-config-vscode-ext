@@ -10,7 +10,7 @@ $ npm install --save-dev eslint eslint-config-vscode-ext @typescript-eslint/pars
 
 ## Usage
 
-Add some ESLint config to your package.json (or `.eslintrc`):
+Add a ESLint config to your `package.json` (or `.eslintrc`):
 
 ```json
 {
@@ -20,6 +20,17 @@ Add some ESLint config to your package.json (or `.eslintrc`):
 			"vscode-ext"
 		]
 	}
+}
+```
+
+And a script, so you can run it via shell:
+
+```json
+{
+    "scripts": {
+     ...
+     "lint": "eslint -c package.json --ext .ts <mySrcFolder>"
+   }
 }
 ```
 
