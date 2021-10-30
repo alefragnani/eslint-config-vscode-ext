@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-vscode-ext",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "ESLint config for VS Code extensions",
   "main": "index.js",
   "scripts": {
@@ -22,14 +22,14 @@
   },
   "homepage": "https://github.com/alefragnani/eslint-config-vscode-ext#readme",
   "devDependencies": {
-    "@typescript-eslint/eslint-plugin": "^3.2.0",
-    "@typescript-eslint/parser": "^3.2.0",
-    "eslint": "^7.2.0",
-    "typescript": "^3.5.1"
+    "@typescript-eslint/eslint-plugin": "^5.2.0",
+    "@typescript-eslint/parser": "^5.2.0",
+    "eslint": "^8.1.0",
+    "typescript": "^4.4.4"
   },
   "peerDependencies": {
-    "@typescript-eslint/eslint-plugin": ">=3.2.0",
-    "eslint": ">=6.6.0",
-    "typescript": ">=3.6.0"
+    "@typescript-eslint/eslint-plugin": ">=5.2.0",
+    "eslint": ">=8.1.0",
+    "typescript": ">=4.4.4"
   }
 }
