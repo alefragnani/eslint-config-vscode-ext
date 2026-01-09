@@ -35,6 +35,10 @@ module.exports = {
         '@typescript-eslint/no-unused-vars': 1,
         '@typescript-eslint/no-explicit-any': 1,
         '@typescript-eslint/no-non-null-assertion': 1,
+        "indent": ["error", 4, { "SwitchCase": 1 }],
+			"no-tabs": "error",
+            "semi": ["error", "always"],
+            "no-unexpected-multiline": "error",
         'eqeqeq': 2
     }
 };
