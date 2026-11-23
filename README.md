@@ -34,6 +34,10 @@ And a script, so you can run it via shell:
 }
 ```
 
+## Development
+
+Install dependencies with `npm ci` and run the test suite with `npm test`.
+
 ## Support
 
 If you find it useful, please consider supporting it.
