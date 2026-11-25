@@ -5,10 +5,8 @@ const test = require('node:test');
 const { ESLint } = require('eslint');
 
 const eslint = new ESLint({
-    useEslintrc: false,
-    overrideConfig: {
-        extends: [require.resolve('..')]
-    }
+    overrideConfigFile: true,
+    overrideConfig: require('..')
 });
 
 async function lint(source) {

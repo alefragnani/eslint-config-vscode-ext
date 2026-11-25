@@ -4,35 +4,33 @@ This module is an ESLint [shareable config](https://eslint.org/docs/developer-gu
 
 ## Installation
 
-```
-$ npm install --save-dev eslint eslint-config-vscode-ext @typescript-eslint/parser @typescript-eslint/eslint-plugin
+Requires Node.js `^20.19.0`, `^22.13.0`, or `>=24` and ESLint 10.
+
+```sh
+npm install --save-dev eslint@^10 eslint-config-vscode-ext @typescript-eslint/parser@^8.71.1 @typescript-eslint/eslint-plugin@^8.71.1 typescript@^5.3.3
 ```
 
 ## Usage
 
-Add a ESLint config to your `package.json` (or `.eslintrc`):
+Create an `eslint.config.cjs` in your project root:
 
-```json
-{
-	"name": "my-vscode-extension",
-	"eslintConfig": {
-		"extends": [
-			"vscode-ext"
-		]
-	}
-}
+```js
+module.exports = [
+    ...require('eslint-config-vscode-ext')
+];
 ```
 
-And a script, so you can run it via shell:
+Add a script to your `package.json`, replacing `src` with your source folder:
 
 ```json
 {
     "scripts": {
-     ...
-     "lint": "eslint -c package.json --ext .ts <mySrcFolder>"
-   }
+        "lint": "eslint \"src/**/*.ts\""
+    }
 }
 ```
+
+Run it with `npm run lint`. This flat config replaces the legacy `.eslintrc` / `eslintConfig` setup and exports an array; spread it into your config before any project-specific overrides.
 
 ## Development
 
