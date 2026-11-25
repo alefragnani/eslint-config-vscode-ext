@@ -95,7 +95,7 @@ test('explicit module boundary types are not required', async () => {
 });
 
 test('ESLint and TypeScript recommended configs are inherited', async () => {
-    const messages = await lint('debugger;\nexport const empty = () => {};');
+    const messages = await lint('debugger;\ntype Empty = {};');
     assert.ok(messages.some(message => message.ruleId === 'no-debugger' && message.severity === 2));
-    assert.ok(messages.some(message => message.ruleId === '@typescript-eslint/no-empty-function' && message.severity === 2));
+    assert.ok(messages.some(message => message.ruleId === '@typescript-eslint/no-empty-object-type' && message.severity === 2));
 });
